@@ -1,29 +1,18 @@
 """Ce module fournit une fonction pour calculer une moyenne de valeurs"""
 
-# NB: Ce fichier contient du code à compléter
-
-from rich.markdown import Markdown
 from rich.console import Console
+from rich.markdown import Markdown
 
 
 def moyenne(valeurs):
-    # docstrings en markdown
-    """
-    # Calcule la moyenne des valeurs.
+    """Retourne la moyenne des valeurs d'une liste non vide."""
+    if not valeurs:
+        raise ValueError("La liste de valeurs ne peut pas être vide")
 
-    **Paramètres**
-    - `valeurs` : valeurs dont on veut calculer la moyenne
-
-    **Retour**
-    - la moyenne des valeurs
-
-    **Exceptions**
-    - `ValueError` : si la liste est vide
-
-    ---
-    """
-    print("!! TODO : Compléter la fonction moyenne !!", end=" ")
-    pass
+    res = 0
+    for x in valeurs:
+        res += x
+    return res / len(valeurs)
 
 
 if __name__ == "__main__":

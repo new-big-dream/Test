@@ -23,8 +23,7 @@ On souhaite écrire une fonction permettant de calculer la moyenne des valeurs c
 - La fonction doit avoir la forme :
 
 ```python
-def moyenne(valeurs):
-    ...
+def moyenne(valeurs): ...
 ```
 
 - La fonction doit retourner la moyenne des valeurs de la liste qui lui est passée en paramètres.  
